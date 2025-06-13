@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "274175188474",
+    "project_id": "application-51a23",
+    "storage_bucket": "application-51a23.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274175188474:android:ea20e145f8778768e25843",
+        "android_client_info": {
+          "package_name": "com.example.givedonnationapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVCl8OjjiW-jGwxp8ljip0PLDh77HbNz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

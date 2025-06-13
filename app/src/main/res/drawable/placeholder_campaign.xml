@@ -1,0 +1,35 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120"
+    android:tint="#BDBDBD">
+
+    <!-- Background rectangle -->
+    <path
+        android:fillColor="#EEEEEE"
+        android:pathData="M0,0h120v120h-120z"/>
+
+    <!-- Image placeholder (camera icon) -->
+    <group android:translateX="30" android:translateY="30">
+        <path
+            android:fillColor="#9E9E9E"
+            android:pathData="M60,20l-10,10h-20c-5.5,0 -10,4.5 -10,10v30c0,5.5 4.5,10 10,10h40c5.5,0 10,-4.5 10,-10v-30c0,-5.5 -4.5,-10 -10,-10h-20z"/>
+        <path
+            android:fillColor="#757575"
+            android:pathData="M60,45c5.5,0 10,4.5 10,10s-4.5,10 -10,10 -10,-4.5 -10,-10 4.5,-10 10,-10z"/>
+    </group>
+
+    <!-- Text placeholder -->
+    <group android:translateX="10" android:translateY="90">
+        <path
+            android:fillColor="#9E9E9E"
+            android:pathData="M0,0h100v5h-100z"/>
+        <path
+            android:fillColor="#9E9E9E"
+            android:pathData="M0,10h80v5h-80z"/>
+        <path
+            android:fillColor="#9E9E9E"
+            android:pathData="M0,20h60v5h-60z"/>
+    </group>
+</vector>

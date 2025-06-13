@@ -1,0 +1,33 @@
+<!-- res/layout/footer.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/purple_500"
+    android:padding="16dp"
+    android:elevation="8dp">
+
+    <ImageView
+        android:id="@+id/footerProfile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_profile"
+        android:layout_weight="1"
+        android:contentDescription="Profile"/>
+
+    <ImageView
+        android:id="@+id/footerHome"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:contentDescription="Home"
+        android:src="@drawable/ic_home" />
+
+    <ImageView
+        android:id="@+id/footerLogout"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_logout"
+        android:layout_weight="1"
+        android:contentDescription="Logout"/>
+</LinearLayout>

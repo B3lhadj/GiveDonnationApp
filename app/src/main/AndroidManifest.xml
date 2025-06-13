@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Consider using MANAGE_EXTERNAL_STORAGE for Android 11+ instead -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GiveDonnationApp"
+        tools:targetApi="31">
+
+        <!-- Main Activity (Entry Point) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login Activity -->
+
+
+        <!-- Signup Activity -->
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity"
+            android:windowSoftInputMode="adjustResize|stateVisible"/>
+
+
+
+        <!-- User Campaign List Activity -->
+        <activity
+            android:name=".UserCampaignListActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateVisible"/>
+
+
+        <activity
+            android:name=".UserMainActivity"
+            android:exported="false"
+            android:parentActivityName=".UserCampaignListActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            tools:ignore="DuplicateActivity" />
+        <!-- Campaign Detail Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            tools:ignore="DuplicateActivity" />
+
+        <!-- Donation Activity -->
+        <activity
+            android:name=".DonationActivity"
+            android:exported="false"
+            android:parentActivityName=".CampaignDetailActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+
+        <!-- Donation History Activity -->
+        <activity
+            android:name=".DonationHistoryActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+
+        <!-- Campaign Creation -->
+        <activity
+            android:name=".CreateCampaignActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateVisible"/>
+
+        <!-- Campaign Details (Organization) -->
+        <activity
+            android:name=".CampaignDetailsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name=".CampaignDetailActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <!-- Campaign Update -->
+        <activity
+            android:name=".UpdateCampaignActivity"
+            android:exported="false"
+            android:parentActivityName=".CampaignDetailsActivity"
+            android:windowSoftInputMode="adjustResize|stateVisible"/>
+
+        <!-- Profile Activity -->
+
+
+        <!-- Fragments should NOT be declared in manifest -->
+        <!-- Remove the CampaignListFragment declaration -->
+    </application>
+</manifest>

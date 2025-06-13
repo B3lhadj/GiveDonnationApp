@@ -1,0 +1,59 @@
+<!-- res/values/strings.xml -->
+<resources>
+    <!-- Keep only strings here, no arrays -->
+    <string name="app_name">Give Donation App</string>
+    <string name="organized_by">Organized by: %s</string>
+    <string name="progress_text">Raised %1$s of %2$s (%3$d%%)</string>
+    <plurals name="days_left">
+        <item quantity="one">%d day left</item>
+        <item quantity="other">%d days left</item>
+    </plurals>
+    <string name="no_campaigns_found">No active campaigns found</string>
+    <string name="try_again">Try Again</string>
+    <string name="days_left">%1$d days left</string>
+    <string name="no_active_campaigns" />
+    <string name="load_error" />
+    <string name="empty_campaigns_icon">Empty campaigns icon</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="campaigns">Campaigns</string>
+    <string name="history">History</string>
+    <string name="organization">Organization</string>
+    <string name="profile">Profile</string>
+    <string name="campaign_image">Campaign Image</string>
+        <string name="donate_title">Donate</string>
+        <string name="donation_form_title">Donation Details</string>
+        <string name="amount_hint">Amount</string>
+        <string name="name_hint">Your Name</string>
+        <string name="comments_hint">Comments (Optional)</string>
+        <string name="submit_donation">Submit Donation</string>
+        <string name="dashboard_icon">Dashboard Icon</string>
+        <string name="dashboard_title">Organization Dashboard</string>
+        <string name="dashboard_subtitle">Manage your campaigns</string>
+        <string name="total_campaigns">Total Campaigns</string>
+        <string name="total_campaigns_icon">Total Campaigns Icon</string>
+        <string name="active_campaigns">Active Campaigns</string>
+        <string name="active_campaigns_icon">Active Campaigns Icon</string>
+        <string name="completed_campaigns">Completed Campaigns</string>
+        <string name="completed_campaigns_icon">Completed Campaigns Icon</string>
+        <string name="recent_campaigns">Recent Campaigns</string>
+        <string name="no_campaigns">No campaigns found. Create one to get started!</string>
+        <string name="create_campaign">Create Campaign</string>
+        <string name="empty_state">Empty State</string>
+        <string name="app_logo">App Logo</string>
+        <string name="login_title">Login</string>
+        <string name="email_hint">Email</string>
+        <string name="password_hint">Password</string>
+        <string name="forgot_password">Forgot Password?</string>
+        <string name="login_button">Login</string>
+        <string name="signup_prompt">Don\'t have an account? Sign up</string>
+
+
+        <string name="phone_hint">Phone Number</string>
+        <string name="role_label">Select your role:</string>
+        <string name="role_user">User</string>
+        <string name="role_organization">Organization</string>
+        <string name="org_name_hint">Organization Name</string>
+        <string name="org_desc_hint">Organization Description</string>
+        <string name="signup_button">Sign Up</string>
+
+</resources>
